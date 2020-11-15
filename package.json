@@ -4,7 +4,7 @@
   "description": "A Norton Commander clone for NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "tsc && node ./dist/main.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/uriegel/uc/issues"
   },
-  "homepage": "https://github.com/uriegel/uc#readme"
+  "homepage": "https://github.com/uriegel/uc#readme",
+  "devDependencies": {
+    "typescript": "^4.0.5"
+  }
 }
