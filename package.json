@@ -1,0 +1,22 @@
+{
+  "name": "uc",
+  "version": "1.0.0",
+  "description": "A Norton Commander clone for NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uriegel/uc.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Uwe Riegel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uriegel/uc/issues"
+  },
+  "homepage": "https://github.com/uriegel/uc#readme"
+}
