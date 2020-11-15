@@ -21,5 +21,9 @@
   "homepage": "https://github.com/uriegel/uc#readme",
   "devDependencies": {
     "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "@types/blessed": "^0.1.17",
+    "blessed": "^0.1.81"
   }
 }
