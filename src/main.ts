@@ -1,52 +1,22 @@
-import * as blessed from 'blessed'
+import { FolderView } from './folderview'
+import { GridLayout } from './GridLayout'
+import { Screen } from './screen'
 
-const screen = blessed.screen({
-    smartCSR: true,
-    style: {
-        fg: 'white',
-        bg: 'blue'
-      }    
-  })
+const screen = new Screen({
+	smartCSR: true, 
+	title: "U Commander"
+}) 
 
-screen.title = "U Commander"
-
-const box = blessed.box({
-    left: '0',
-    width: '50%',
-    content: "Das ist der Kommandant Links",
-    tags: true,
-    border: {
-      type: 'line'
-    },
-    style: {
-      fg: 'white',
-      bg: 'blue',
-      border: {
-        fg: '#f0f0f0',
-        bg: 'blue'
-      }
-    }    
-})
-
-const boxRight = blessed.box({
-    left: '50%',
-    width: '50%',
-    content: "Das ist der Kommandant Rechts",
-    tags: true,
-    border: {
-      type: 'line'
-    },
-    style: {
-      fg: 'white',
-      bg: 'blue',
-      border: {
-        fg: '#f0f0f0',
-        bg: 'blue'
-      }
-    }    
-})
-
-screen.append(box)
-screen.append(boxRight)
-box.focus()
+const folderLeft = new FolderView()
+const folderRight = new FolderView()
+const gridLayout = new GridLayout([ folderLeft, folderRight])
+screen.addChild(gridLayout)
 screen.render()
+
+
+
+// screen.append(folderLeft.handle)
+// screen.append(folderRight.handle)
+
+// folderLeft.setPath("/home/uwe")
+// //box.han.focus()
