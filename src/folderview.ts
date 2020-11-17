@@ -19,6 +19,13 @@ export class FolderView extends Element {
                 }
             }
         })
+        this.box.on("resize", evt => {
+            const affe =this.box.height
+            const affe2 =this.box.width
+            const affe3 =this.box.iheight
+            const affe4 =this.box.iwidth
+            const affe43 =this.box.
+        })
     }
 
     get handle() {
